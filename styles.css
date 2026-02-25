@@ -1,0 +1,193 @@
+/* 25 Feb > First attempt and completed the tutorial. Will definitely need to come back to 
+clean up the file of duplicate codes, combining where possible
+
+Will be back to improve on it! */
+
+@import url('https://fonts.googleapis.com');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* to bring footer to the bottom of the screen */
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container, .footer {
+    display: flex;
+    background-color: #1f2937;
+    flex-direction: column;
+}
+
+a,
+.title-text,
+.signup-button, .footer {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 16px;
+    /* top and bottom are 0 while left and right padding are 16 */
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+/* hero section */
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    align-self: center;
+}
+
+.main-title {
+    color: #f9faf8;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+.signup-button {
+    background-color: #3882F6;
+    font-weight: 700;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+/* main content section */
+
+.content-one {
+    /* padding: 0 300px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-content {
+    background-color: #eee;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    /* Adjust the pixel value for more or less rounding */
+    border: 2px solid black;
+}
+
+.gallery-content {
+    display: inline-block;
+    text-align: center;
+    text-wrap: auto;
+    max-width: 200px;
+}
+
+.content-header {
+    color: #1f2937;
+    font-weight: 900;
+    align-self: center;
+    display: flex;
+    flex: 1;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    /* to see if I want to adjust growth and shrink for the gallery */
+}
+
+/* quote section */
+
+.content-two {
+    display: flex;
+    background-color: #e5e7eb;
+    padding: 50px 300px;
+    flex-direction: column;
+    flex: 0 0 auto;
+}
+
+.quote {
+    color: #1f2937;
+    font-weight: 300;
+    font-size: 36px;
+    /* display: flex; */
+    font-style: italic;
+    /* this is required to remove additional lines after the quote, <p> by default has top and bottom margins    */
+    margin: 0;
+    padding: 0;
+}
+
+.quote-origin {
+    /* display:flex; */
+    /* flex: 1; */
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+/* call for action section */
+
+.content-three {
+    align-items: center;
+    padding: 50px;
+}
+
+.call-container {
+    justify-self: center;
+    align-items: center;
+    width: 900px;
+    height: 125px;
+    background-color: #3882F6;
+    display: flex;
+    border-radius: 10px;
+    flex: 2;
+}
+
+.call-para {
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px; */
+}
+
+.call-title {
+    font-weight: bold;
+    color: #e5e7eb;
+    margin: 0;
+    padding: 0;
+}
+
+.call-content {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 0;
+    padding: 0;
+}
+
+.call-button {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.footer {
+    align-items: center;
+}
